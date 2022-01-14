@@ -1,10 +1,3 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
-<p><a href="https://www.facebook.com/groups/fullstackwebdevelopment/" rel="nofollow">Facebook Group |</a>
-<a href="https://plus.google.com/u/0/communities/113464467764075060760" rel="nofollow">Google Plus |</a>
-<a href="https://www.youtube.com/channel/UCqba1eUmmSCal1DbdaHONZA" rel="nofollow">Youtube  |</a>
-<a href="http://www.sumon-it.com" rel="nofollow">Web Site |</a>
-<a href="https://www.facebook.com/csesumonpro" rel="nofollow">Like Us</a></p>
 
 # About Laravel vue js Blog Project
 
@@ -24,14 +17,80 @@
 * How to Image intervation with Laravel (Used for image resize) 
 * How to Use lodash 
 * And much more...
-<article class="markdown-body entry-content" itemprop="text">
-  
-  <li> Clone the repository with git clone </li>
-   <li>Copy .env.example file to .env and edit database credentials there</li>
-  <li> Run composer install</li>
-  <li> Run php artisan key:generate</li>
-  <li> Run php artisan migrate</li>
-  <li> Run npm install</li>
-   <li>Run npm run dev</li>
-<b>That's it - load the homepage.</b>
-</article>
+
+
+
+
+
+
+Installation
+Clone repository
+
+clone repository to your local machine
+
+<code>git clone https://github.com/mucahittopal/laravel-vue-js-super-blog.git</code>
+
+Change Directory
+
+Navigate into the project directory
+
+<code>cd laravel-vue-js-super-blog</code>
+
+Copy .env file
+
+copy content of the environment file
+
+<code>cp .env.example .env</code>
+
+Edit .env file
+
+Update .env file with DB information
+
+<pre>
+  DB_CONNECTION=mysql
+  DB_HOST=localhost
+  DB_PORT=3306
+  DB_DATABASE=homestead
+  DB_USERNAME=homestead
+  DB_PASSWORD=secret
+</pre>
+
+Install laravel packages
+
+Remove composer.lock file and install packages
+
+<code>rm composer.lock</code>
+
+<code>composer install</code>
+
+Generate Key
+
+Generate application key from your terminal
+
+<code>php artisan key:generate</code>
+
+Install npm packages
+
+Remove package-lock.json file and install npm packages
+
+<code>rm package-lock.json</code>
+
+<code>npm i</code>
+
+Run Migrations
+
+Run database migrations and seed the post tables
+
+<code>php artisan migrate:fresh --seed</code>
+
+Start Application
+
+<code>php artisan serve</code>
+
+Go to localhost:8000 and register, start blogging tada
+
+
+
+
+
+
