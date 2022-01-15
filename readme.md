@@ -83,6 +83,11 @@ Run database migrations and seed the post tables
 
 <code>php artisan migrate:fresh --seed</code>
 
+
+Start Vue
+
+<code>npm run watch</code>
+
 Start Application
 
 <code>php artisan serve</code>
